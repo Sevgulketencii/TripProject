@@ -48,6 +48,57 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AboutDbSet");
                 });
 
+            modelBuilder.Entity("EntitiyLayer.Concrete.About2", b =>
+                {
+                    b.Property<int>("About2ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("About2Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("About2Img")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("About2Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("About2Title2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("About2ID");
+
+                    b.ToTable("About2DbSet");
+                });
+
+            modelBuilder.Entity("EntitiyLayer.Concrete.Contact", b =>
+                {
+                    b.Property<int>("ContactID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ContactDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactMail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactMap")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactPhone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("ContactStatus")
+                        .HasColumnType("bit");
+
+                    b.HasKey("ContactID");
+
+                    b.ToTable("ContactDbSet");
+                });
+
             modelBuilder.Entity("EntitiyLayer.Concrete.Destination", b =>
                 {
                     b.Property<int>("DestinationID")
@@ -127,6 +178,36 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("Feature2Id");
 
                     b.ToTable("Feature2DbSet");
+                });
+
+            modelBuilder.Entity("EntitiyLayer.Concrete.Guide", b =>
+                {
+                    b.Property<int>("GuideID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("GuideDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GuideImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GuideInstagram")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GuideName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("GuideStatus")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("GuideTwitter")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GuideID");
+
+                    b.ToTable("GuideDbSet");
                 });
 
             modelBuilder.Entity("EntitiyLayer.Concrete.NewsLetter", b =>

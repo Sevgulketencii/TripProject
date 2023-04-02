@@ -32,12 +32,13 @@ namespace DataAccessLayer.Repository
 
         public List<Table> list()
         {
-            throw new NotImplementedException();
+            return baglan.Set<Table>().ToList();
         }
 
         public void update(Table t)
         {
-            throw new NotImplementedException();
+            baglan.Set<Table>().Update(t);
+            baglan.SaveChanges();
         }
     }
 }

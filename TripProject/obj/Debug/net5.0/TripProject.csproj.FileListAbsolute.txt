@@ -440,3 +440,11 @@ C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\bin\Debug\net5.0\
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\LayoutPartial\_HeaderLayout.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\LayoutPartial\_FooterLayout.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\LayoutPartial\_NavbarLayout.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\LayoutPartial\_ScriptLayout.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\Slider\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\PopularDestination\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\Statistic\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\Feature1\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\Feature2\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\SubAbout\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\Testimonial\Default.cshtml.g.cs

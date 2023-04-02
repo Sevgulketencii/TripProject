@@ -11,9 +11,12 @@ namespace DataAccessLayer.Concrete
     public class Context:DbContext
     {
         public DbSet<About> AboutDbSet { get; set; }
+        public DbSet<About2> About2DbSet { get; set; }
+        public DbSet<Contact> ContactDbSet { get; set; }
         public DbSet<Destination> DestinationDbSet { get; set; }
         public DbSet<Feature> FeatureDbSet { get; set; }
         public DbSet<Feature2> Feature2DbSet { get; set; }
+        public DbSet<Guide> GuideDbSet { get; set; }
         public DbSet<NewsLetter> NewsletterDbSet { get; set; }
         public DbSet<SubAbout> SubAboutDbSet { get; set; }
         public DbSet<Testimonial> TestimonialDbSet { get; set; }
