@@ -17,6 +17,11 @@ namespace EntitiyLayer.Concrete
         public string RouteImage { get; set; }
         public string RouteDescription { get; set; }
         public string Capacity { get; set; }
+        public string CoverPhoto { get; set; }
+        public string Detail1 { get; set; }
+        public string Detail2 { get; set; }
+        public string RouteImage2 { get; set; }
         public bool RouteStatus { get; set; }
+        public List<Comment> Comment { get; set; }
     }
 }

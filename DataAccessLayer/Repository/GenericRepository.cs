@@ -3,6 +3,7 @@ using DataAccessLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,6 +29,11 @@ namespace DataAccessLayer.Repository
         {
             return baglan.Set<Table>().Find(id);
 
+        }
+
+        public List<Table> GetFilterList(Expression<Func<Table, bool>> filter)
+        {
+            return baglan.Set<Table>().Where(filter).ToList();
         }
 
         public List<Table> list()

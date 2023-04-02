@@ -448,3 +448,7 @@ C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\Feature2\Default.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\SubAbout\Default.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\Testimonial\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Destination\Index.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Destination\Detail.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentList\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentAdd\Default.cshtml.g.cs

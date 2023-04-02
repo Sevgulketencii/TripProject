@@ -20,6 +20,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<NewsLetter> NewsletterDbSet { get; set; }
         public DbSet<SubAbout> SubAboutDbSet { get; set; }
         public DbSet<Testimonial> TestimonialDbSet { get; set; }
+        public DbSet<Comment> CommentDbSet { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
