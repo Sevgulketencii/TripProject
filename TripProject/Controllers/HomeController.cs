@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace TripProject.Controllers
 {
     public class HomeController : Controller
     {
-        
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
