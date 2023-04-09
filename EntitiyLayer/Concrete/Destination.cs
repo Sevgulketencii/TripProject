@@ -23,5 +23,6 @@ namespace EntitiyLayer.Concrete
         public string RouteImage2 { get; set; }
         public bool RouteStatus { get; set; }
         public List<Comment> Comment { get; set; }
+        public List<Reservation> Reservations { get; set; }
     }
 }

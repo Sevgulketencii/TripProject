@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace TripProject.Controllers
 {
-    [AllowAnonymous]
     public class DestinationController : Controller
     {
         DestinationManager destination = new DestinationManager(new EfDestinationDal());

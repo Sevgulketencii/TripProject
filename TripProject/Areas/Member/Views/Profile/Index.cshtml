@@ -1,0 +1,47 @@
+﻿@model TripProject.Areas.Member.Models.UserEditModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+
+<form asp-area="Member" asp-controller="Profile" asp-action="Index" method="post" enctype="multipart/form-data">
+
+    <label><strong>Adınız</strong></label><br />
+    <input type="text" name="name" value=@Model.name class="form-control" /><br />
+
+    <label><strong>Soyadınız</strong></label><br />
+    <input type="text" name="surname" value=@Model.surname class="form-control" /><br />
+
+    <label><strong>Mail Adresiniz</strong></label><br />
+    <input type="text" name="mail" value=@Model.mail class="form-control" /><br />
+
+    <label><strong>Telefon numaranız</strong></label><br />
+    <input type="text" name="phone" value=@Model.phone class="form-control" /><br />
+
+    <label><strong>Fotoğraf Yolunuz</strong></label><br />
+    <input type="text" name="imageurl" value=@Model.imageurl class="form-control" /><br />
+
+    <label><strong>Cinsiyetiniz</strong></label><br />
+    <select id="gender" class="form-control">
+        <optgroup label="Seçebilecekleriniz">
+            <option value="erkek">Erkek</option>
+            <option value="kadın">Kadın</option>
+            <option value="null">Boş</option>
+        </optgroup>
+    </select><br />
+
+
+    <label><strong>Şifreniz</strong></label><br />
+    <input type="text" name="password" value=@Model.password class="form-control" /><br />
+
+
+    <label><strong>Resim seçiniz</strong></label><br />
+    <input type="file" name="image" class="form-control" /><br />
+
+
+
+
+    <button action="submit" class="btn btn-primary">Güncelle</button>
+</form>
+

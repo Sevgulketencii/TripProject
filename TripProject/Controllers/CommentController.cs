@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace TripProject.Controllers
 {
-    [AllowAnonymous]
     public class CommentController : Controller
     {
         CommentManager comment = new CommentManager(new EfCommentDal());

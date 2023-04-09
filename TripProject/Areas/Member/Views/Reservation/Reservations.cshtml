@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Reservations";
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+}
+@model Reservation
+<h1>Aktif Rezervasyon Yapılabilecek Rotalar</h1>
+<form asp-area="Member" asp-controller="Reservation" asp-action="Reservations" method="post">
+    <label>Rotalar</label>
+    @Html.DropDownListFor(x => x.DestinationID, (List<SelectListItem>)ViewBag.dropdown, new { @class = "form-control"}) <br />
+    <label>Kişi Sayısı</label>
+    <input type="text" name="ReservationCount" class="form-control" value="" /><br />
+    <input type="hidden" name="AppUserID" class="form-control" value=@ViewBag.userID /><br />
+
+    <label>Tarih</label>
+    <input type="date" name="ReservationDate" class="form-control" value="" /><br />
+
+    <label>Eklemek istediğiniz not</label>
+    <textarea name="Description" class="form-control" rows="4" cols="4"></textarea><br />
+
+    <button action="submit" class="btn btn-success">Rezervasyon Yap</button>
+</form>

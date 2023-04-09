@@ -375,6 +375,43 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("NewsletterDbSet");
                 });
 
+            modelBuilder.Entity("EntitiyLayer.Concrete.Reservation", b =>
+                {
+                    b.Property<int>("ReservationID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AppUserID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DestinationID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReservationCount")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ReservationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReservationDestination")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReservationStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ReservationID");
+
+                    b.HasIndex("AppUserID");
+
+                    b.HasIndex("DestinationID");
+
+                    b.ToTable("ReservationDbSet");
+                });
+
             modelBuilder.Entity("EntitiyLayer.Concrete.SubAbout", b =>
                 {
                     b.Property<int>("SubAboutID")
@@ -529,6 +566,25 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Destination");
                 });
 
+            modelBuilder.Entity("EntitiyLayer.Concrete.Reservation", b =>
+                {
+                    b.HasOne("EntitiyLayer.Concrete.AppUser", "AppUser")
+                        .WithMany("Reservation")
+                        .HasForeignKey("AppUserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntitiyLayer.Concrete.Destination", "Destination")
+                        .WithMany("Reservations")
+                        .HasForeignKey("DestinationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Destination");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("EntitiyLayer.Concrete.AppRole", null)
@@ -580,9 +636,16 @@ namespace DataAccessLayer.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("EntitiyLayer.Concrete.AppUser", b =>
+                {
+                    b.Navigation("Reservation");
+                });
+
             modelBuilder.Entity("EntitiyLayer.Concrete.Destination", b =>
                 {
                     b.Navigation("Comment");
+
+                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }

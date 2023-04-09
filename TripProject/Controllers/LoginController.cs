@@ -37,6 +37,7 @@ namespace TripProject.Controllers
                 Name = p.Name,
                 Surname = p.Surname,
                 UserName = p.UserName,
+                Email=p.Mail
 
             };
             if (ModelState.IsValid)
@@ -69,5 +70,11 @@ namespace TripProject.Controllers
             }
             return View(p);
         }
+
+        //public async Task<IActionResult> SignOutAsync()
+        //{
+        //    var result = await _signInManager.SignOutAsync;
+        //    return RedirectToAction("Index", "Home");
+        //}
     }
 }

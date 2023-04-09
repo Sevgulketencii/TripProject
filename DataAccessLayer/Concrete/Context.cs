@@ -22,6 +22,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<SubAbout> SubAboutDbSet { get; set; }
         public DbSet<Testimonial> TestimonialDbSet { get; set; }
         public DbSet<Comment> CommentDbSet { get; set; }
+        public DbSet<Reservation> ReservationDbSet { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
