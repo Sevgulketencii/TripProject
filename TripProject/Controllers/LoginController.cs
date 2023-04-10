@@ -61,7 +61,7 @@ namespace TripProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(p.UserName, p.Password, false, false);
+                var result = await _signInManager.PasswordSignInAsync(p.UserName, p.Password, true, true);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index", "Destination",new { area="Member"});

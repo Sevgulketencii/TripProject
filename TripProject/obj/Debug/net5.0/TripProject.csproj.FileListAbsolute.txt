@@ -471,3 +471,11 @@ C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Reservation\ActiveReservations.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Reservation\OldReservations.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Member\Views\Reservation\WaitReservations.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Member\Views\DashBoard\Index.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\ProfileInfo\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\GuideList\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\PlatformSettings\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\DestinationList\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Destination\Index.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs

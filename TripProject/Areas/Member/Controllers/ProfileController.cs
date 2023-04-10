@@ -35,7 +35,7 @@ namespace TripProject.Areas.Member.Controllers
                 gender = user.Gender,
                 imageurl = user.Image,
                 mail = user.Email,
-                password = user.PasswordHash
+                //password = user.PasswordHash
             };
             return View(p);
         }
@@ -59,7 +59,7 @@ namespace TripProject.Areas.Member.Controllers
             }
             user.Name = p.name;
             user.Surname = p.surname;
-            user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, p.password);
+            //user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, p.password);//Düzenlenmesi lazım 
             user.PhoneNumber = p.phone;
             user.Gender = p.gender;
             user.Email = p.mail;

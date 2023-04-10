@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@model List<Destination>
+
+
+
+    <h5 class="card-header">Rota Tablosu</h5>
+    <div class="table-responsive text-nowrap">
+        <table class="table">
+            <thead class="table-light">
+                <tr>
+                    <th>Rota ID</th>
+                    <th>Şehir</th>
+                    <th>Kapasite</th>
+                    <th>Statü</th>
+                    <th>Sitede Gör</th>
+                    <th>Sil</th>
+                    <th>Güncelle</th>
+
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.DestinationID</strong></td>
+                    <td>@item.City</td>
+                    <td>@item.Capacity</td>
+                    @if (item.RouteStatus == true)
+                    {
+                        <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                    }
+                    else
+                    {
+                        <td><span class="badge bg-label-warning me-1">Pasif</span></td>
+                    }
+                    <td><a href="#" class="btn btn-info">Siteye Git</a> </td>
+                    <td><a href="#" class="btn btn-danger">Sil</a> </td>
+                    <td><a href="#" class="btn btn-warning">Güncelle</a> </td>
+
+                    
+                </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
