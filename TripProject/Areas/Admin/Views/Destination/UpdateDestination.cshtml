@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model Destination
+<br />
+<h1>Rota Güncelleme</h1>
+
+<form asp-area="Admin" asp-controller="Destination" asp-action="UpdateDestination" method="post">
+    <input type="hidden" name="DestinationID" value="@Model.DestinationID" />
+    <input type="text" name="City"  value="@Model.City" class="form-control" /><br />
+    <input type="text" name="DayNight"  value="@Model.DayNight" class="form-control" /><br />
+    <input type="text" name="Price"  value="@Model.Price" class="form-control" /><br />
+    <input type="text" name="RouteImage"  value="@Model.RouteImage" class="form-control" /><br />
+    <input type="text" name="Capacity"  value="@Model.Capacity" class="form-control" /><br />
+    <input type="text" name="CoverPhoto"  value="@Model.RouteImage2" class="form-control" /><br />
+    <input type="text" name="RouteImage2"  value="@Model.CoverPhoto" class="form-control" /><br />
+    <label>Detay1</label><br />
+    <textarea name="RouteDescription" class="form-control" rows="4" cols="4">@Model.RouteDescription</textarea><br />
+    <label>Detay2</label><br />
+    <textarea name="Detail1" class="form-control" rows="4" cols="4">@Model.Detail1</textarea><br />
+    <button action="submit" class="btn btn-success">Ekle</button>
+</form>

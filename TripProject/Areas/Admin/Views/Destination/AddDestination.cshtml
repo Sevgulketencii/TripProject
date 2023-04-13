@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "AddDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h1>Rota Ekle</h1>
+
+<form asp-area="Admin" asp-controller="Destination" asp-action="AddDestination" method="post">
+
+    <input type="text" name="City" placeholder="Şehir" class="form-control" /><br />
+    <input type="text" name="DayNight" placeholder="Gün - Gece" class="form-control" /><br />
+    <input type="text" name="Price" placeholder="Fiyat" class="form-control" /><br />
+    <input type="text" name="RouteImage" placeholder="Ana Görsel" class="form-control" /><br />
+    <input type="text" name="Capacity" placeholder="Kapasite" class="form-control" /><br />
+    <input type="text" name="CoverPhoto" placeholder="Görsel2" class="form-control" /><br />
+    <input type="text" name="RouteImage2" placeholder="Görsel3" class="form-control" /><br />
+    <label>Detay1</label><br />
+    <textarea name="RouteDescription" class="form-control" rows="4" cols="4"></textarea><br />
+    <label>Detay2</label><br />
+    <textarea name="Detail1" class="form-control" rows="4" cols="4"></textarea><br />
+    <button action="submit" class="btn btn-success">Ekle</button>
+
+</form>

@@ -39,10 +39,10 @@
                     {
                         <td><span class="badge bg-label-warning me-1">Pasif</span></td>
                     }
-                    <td><a href="#" class="btn btn-info">Siteye Git</a> </td>
-                    <td><a href="#" class="btn btn-danger">Sil</a> </td>
-                    <td><a href="#" class="btn btn-warning">Güncelle</a> </td>
-
+                    <td><a href="/Destination/Detail/@item.DestinationID" class="btn btn-info">Siteye Git</a> </td>
+                    <td><a href="/Admin/Destination/DeleteDestination/@item.DestinationID" class="btn btn-danger">Sil</a> </td>
+                    <td><a href="/Admin/Destination/UpdateDestination/@item.DestinationID" class="btn btn-warning">Güncelle</a> </td>
+    
                     
                 </tr>
                 }
@@ -50,4 +50,5 @@
 
             </tbody>
         </table>
+        <a asp-area="Admin" asp-controller="Destination" asp-action="AddDestination" class="btn btn-success">Ekle</a>
     </div>

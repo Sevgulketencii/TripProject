@@ -479,3 +479,11 @@ C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Destination\Index.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Destination\AddDestination.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Destination\UpdateDestination.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminHeader.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminAppBrand.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminPartialSideBar.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminNavbar.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminFooter.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminScript.cshtml.g.cs
