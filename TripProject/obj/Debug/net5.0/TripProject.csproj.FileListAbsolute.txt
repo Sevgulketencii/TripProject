@@ -487,3 +487,6 @@ C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminNavbar.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminFooter.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\AdminLayoutPartial\AdminScript.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\DashBoard\Index.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\DashBoardBanner\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Views\Shared\Components\CardStatistic1\Default.cshtml.g.cs
