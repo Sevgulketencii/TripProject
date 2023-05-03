@@ -45,6 +45,11 @@ namespace BusinessLayer.Concrete
             return _comment.list();
         }
 
+        public List<Comment> TGetCommentWithDestination()
+        {
+            return _comment.GetListCommentWithDestination();
+        }
+
         public void update(Comment t)
         {
              _comment.update(t);

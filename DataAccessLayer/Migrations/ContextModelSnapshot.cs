@@ -262,8 +262,8 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Detail2")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Price")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
 
                     b.Property<string>("RouteDescription")
                         .HasColumnType("nvarchar(max)");

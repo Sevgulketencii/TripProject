@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model List<Guide>
+<BR />
+<h3 class="mt-2 text-muted">Rehber Listesi</h3>
+
+<div class="row mb-5">
+    @foreach (var item in Model)
+    {<div class="col-md-6 col-lg-4">
+            <div class="card" style="margin-top:20px">
+                <img class="card-img-top" src="@item.GuideImage" width="100" height="340" alt="Card image cap" />
+                <div class="card-body" style="margin:auto">
+                    <h3 class="card-title">@item.GuideName</h3>
+                    @{ if (item.GuideStatus == true)
+                        {
+                            <button href="#" style="margin-left:50px" class="btn btn-success btn-sm">AKTİF</button>
+                        }
+                        else
+                        {
+                            <button href="#" style="margin-left:50px" class="btn btn-danger btn-sm">PASİF</button>
+
+                        }
+                    }
+
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">@item.GuideDescription</li>
+
+                </ul>
+                <div class="card-body" style="margin:auto">
+                    <a href="#" class="btn btn-primary ">Aktif Yap</a>
+                    <a href="#" class="btn btn-warning ">Pasif Yap</a>
+                </div>
+                <a href="#" class="btn btn-secondary btn-lg">Düzenle</a>
+            </div>
+        </div>
+
+    }
+    <a href="/Admin/Guide/GuideAdd" class="btn btn-success btn-lg" style="margin-top:20px">Rehber Ekle</a>
+
+</div>
+
+

@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntitiyLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
@@ -14,10 +15,16 @@ namespace TripProject.Areas.Admin.Controllers
     [AllowAnonymous]
     public class DestinationController : Controller
     {
-        DestinationManager destination = new DestinationManager(new EfDestinationDal());
+        private readonly IDestinationService _destinationService;
+
+        public DestinationController(IDestinationService destinationService)
+        {
+            _destinationService = destinationService;
+        }
+
         public IActionResult Index()
         {
-            var list = destination.List();
+            var list = _destinationService.List();
             return View(list);
         }
 
@@ -30,22 +37,22 @@ namespace TripProject.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult AddDestination(Destination p)
         {
-            destination.add(p);
+            _destinationService.add(p);
             return RedirectToAction("Index");
         }
 
 
         public IActionResult DeleteDestination(int id)
         {
-            var value=destination.GetByID(id);
-            destination.delete(value);
+            var value= _destinationService.GetByID(id);
+            _destinationService.delete(value);
             return RedirectToAction("Index");
         }
 
         [HttpGet]
         public IActionResult UpdateDestination(int id)
         {
-            var values = destination.GetByID(id);
+            var values = _destinationService.GetByID(id);
             return View(values);
 
         }
@@ -53,7 +60,7 @@ namespace TripProject.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult UpdateDestination(Destination p)
         {
-            destination.update(p);
+            _destinationService.update(p);
             return RedirectToAction("Index");
         }
 

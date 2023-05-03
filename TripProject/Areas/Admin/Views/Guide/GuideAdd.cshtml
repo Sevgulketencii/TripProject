@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "GuideAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model Guide
+<br />
+<h1>Rehber Ekle</h1>
+
+<form asp-area="Admin" asp-controller="Guide" asp-action="GuideAdd" method="post">
+
+    <input type="text" name="GuideName" placeholder="Adı Soyadı" class="form-control" />
+    <span asp-validation-for="GuideName" class="text-danger"></span><br />
+    <textarea name="GuideDescription" class="form-control" placeholder="Açıklama" rows="4" cols="4"></textarea>
+    <span asp-validation-for="GuideDescription" class="text-danger"></span><br />
+    <input type="text" name="GuideImage" placeholder="Görsel" class="form-control" />
+    <span asp-validation-for="GuideImage" class="text-danger"></span><br />
+    <input type="text" name="GuideTwitter" placeholder="Twitter Url" class="form-control" /><br />
+    <input type="text" name="GuideInstagram" placeholder="İnstagram Url" class="form-control" /><br />
+
+    <button action="submit" class="btn btn-success">Ekle</button>
+
+</form>
