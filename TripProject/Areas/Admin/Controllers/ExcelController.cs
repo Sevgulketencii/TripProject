@@ -1,4 +1,5 @@
-﻿using ClosedXML.Excel;
+﻿using BusinessLayer.Abstract;
+using ClosedXML.Excel;
 using DataAccessLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using OfficeOpenXml;
@@ -14,6 +15,13 @@ namespace TripProject.Areas.Admin.Controllers
     [Area("Admin")]
     public class ExcelController : Controller
     {
+        private readonly IExcelService _excelService;
+        
+        public ExcelController(IExcelService excelService)
+        {
+            _excelService = excelService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -21,27 +29,7 @@ namespace TripProject.Areas.Admin.Controllers
 
         public IActionResult StaticExcel()
         {
-            ExcelPackage excel = new ExcelPackage();
-            var workSheet = excel.Workbook.Worksheets.Add("StatikRapor");
-
-            workSheet.Cells[1, 1].Value = "Rota";
-            workSheet.Cells[1, 2].Value = "Rehber";
-            workSheet.Cells[1, 3].Value = "Kontenjan";
-
-            workSheet.Cells[2, 1].Value = "Gürcistan";
-            workSheet.Cells[2, 2].Value = "Ali Demir";
-            workSheet.Cells[2, 3].Value = "30";
-
-            workSheet.Cells[3, 1].Value = "Batum";
-            workSheet.Cells[3, 2].Value = "Cenk Deniz";
-            workSheet.Cells[3, 3].Value = "20";
-
-            workSheet.Cells[4, 1].Value = "Karadeniz";
-            workSheet.Cells[4, 2].Value = "Semih Varan";
-            workSheet.Cells[4, 3].Value = "40";
-
-            var bytes = excel.GetAsByteArray();
-            return File(bytes,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","StatikRapor.xlsx");
+            return File(_excelService.ExcelList(DestinationList()), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "BusinessExcel.xlsx");
         }
 
 

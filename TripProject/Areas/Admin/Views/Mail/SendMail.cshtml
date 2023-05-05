@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "SendMail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<form asp-area="Admin" asp-controller="Mail" asp-action="SendMail" method="post">
+
+    <div class="col-md-12">
+        <div class="card mb-4">
+            <h5 class="card-header">Mail Gönder</h5>
+            <div class="card-body demo-vertical-spacing demo-only-element">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon11">Alıcı</span>
+                    <input type="text"
+                           name="ReceiverMail"
+                           class="form-control"
+                           placeholder="Alıcı Mail Adresi"
+                           aria-label="Username"
+                           aria-describedby="basic-addon11" />
+                </div>
+
+                <div class="input-group input-group-merge">
+
+                    <input type="text" name="Subject" class="form-control" id="basic-url3" aria-describedby="basic-addon34" placeholder="Konu" />
+                </div>
+
+
+                <div class="input-group">
+                    <span class="input-group-text">Mesajınız</span>
+                    <textarea name="Body" class="form-control" cols="10" aria-label="With textarea" placeholder="Merhaba"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button action="submit" class="btn btn-success">Mail Gönder</button>
+
+</form>
+

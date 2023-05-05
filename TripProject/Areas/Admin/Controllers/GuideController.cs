@@ -68,11 +68,13 @@ namespace TripProject.Areas.Admin.Controllers
 
         public IActionResult ActiveGuide(int id)
         {
+            _guideService.ActiveGuide(id);
             return RedirectToAction("Index");
         }
 
         public IActionResult PassiveGuide(int id)
         {
+            _guideService.PassiveGuide(id);
             return RedirectToAction("Index");
         }
     }

@@ -18,6 +18,11 @@ namespace BusinessLayer.Concrete
             _guide = guide;
         }
 
+        public void ActiveGuide(int id)
+        {
+            _guide.ActiveGuide(id);
+        }
+
         public void add(Guide t)
         {
             _guide.add(t);
@@ -36,6 +41,11 @@ namespace BusinessLayer.Concrete
         public List<Guide> List()
         {
             return _guide.list();
+        }
+
+        public void PassiveGuide(int id)
+        {
+            _guide.PassiveGuide(id);
         }
 
         public void update(Guide t)
