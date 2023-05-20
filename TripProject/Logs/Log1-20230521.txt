@@ -1,0 +1,8 @@
+2023-05-21T00:09:52.0225585+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T00:09:52.0329892+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-05-21T00:09:52.0353119+03:00  [INF] Content root path: "C:\Users\keten\source\repos\TripProject\TripProject" (b5d60022)
+2023-05-21T00:09:53.7469501+03:00 80000004-0000-fd00-b63f-84710c7967bb [INF] 21.05.2023 00:00:00Guest Index'e Gidildi (8af0538c)
+2023-05-21T00:25:05.2060076+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T00:25:05.2171590+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-05-21T00:25:05.2189577+03:00  [INF] Content root path: "C:\Users\keten\source\repos\TripProject\TripProject" (b5d60022)
+2023-05-21T00:25:05.4023534+03:00 80000010-0006-ff00-b63f-84710c7967bb [INF] 21.05.2023 00:00:00Guest Index'e Gidildi (8af0538c)

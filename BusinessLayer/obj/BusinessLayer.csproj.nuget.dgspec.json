@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\keten\\source\\repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\keten\\source\\repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\keten\\source\\repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\keten\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\keten\\source\\repos\\TripProject\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Sevgül KETENCİ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\keten\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -32,11 +28,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
-                "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj"
+              "C:\\Users\\keten\\source\\repos\\TripProject\\DTOLayer\\DTOLayer.csproj": {
+                "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\DTOLayer\\DTOLayer.csproj"
+              },
+              "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
+                "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj"
               }
             }
           }
@@ -99,26 +98,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\keten\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Sevgül KETENCİ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\keten\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -131,8 +126,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
-                "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj"
+              "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
+                "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj"
               }
             }
           }
@@ -191,26 +186,76 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
+    "C:\\Users\\keten\\source\\repos\\TripProject\\DTOLayer\\DTOLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
-        "projectName": "EntitiyLayer",
-        "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
-        "packagesPath": "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\obj\\",
+        "projectUniqueName": "C:\\Users\\keten\\source\\repos\\TripProject\\DTOLayer\\DTOLayer.csproj",
+        "projectName": "DTOLayer",
+        "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\DTOLayer\\DTOLayer.csproj",
+        "packagesPath": "C:\\Users\\keten\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\keten\\source\\repos\\TripProject\\DTOLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Sevgül KETENCİ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\keten\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
+        "projectName": "EntitiyLayer",
+        "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
+        "packagesPath": "C:\\Users\\keten\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\keten\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -279,7 +324,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

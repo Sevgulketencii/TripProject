@@ -23,11 +23,13 @@ namespace DataAccessLayer.Concrete
         public DbSet<Testimonial> TestimonialDbSet { get; set; }
         public DbSet<Comment> CommentDbSet { get; set; }
         public DbSet<Reservation> ReservationDbSet { get; set; }
+        public DbSet<ContactUs> ContactUsDbSet { get; set; }
+        public DbSet<Announcement> AnnouncementDbSet { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            optionsBuilder.UseSqlServer("server=DESKTOP-KCH0A99;database=TripProject;integrated security=true");
+            optionsBuilder.UseSqlServer("server=DESKTOP-5N8R6K8;database=TripProject;integrated security=true");
 
         }
     }

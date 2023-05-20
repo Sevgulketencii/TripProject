@@ -26,6 +26,10 @@ namespace BusinessLayer.Container
             services.AddScoped<IGuideService, GuideManager>();
             services.AddScoped<IGuideDal, EfGuideDal>();
             services.AddScoped<IExcelService, ExcelManager>();
+            services.AddScoped<IContactUsDal, EfContactUsDal>();
+            services.AddScoped<IContactUsService, ContactUsManager>();
+            services.AddScoped<IAnnouncementDal, EfAnnouncementDal>();
+            services.AddScoped<IAnnouncementService, AnnouncementManager>();
         }
     }
 }

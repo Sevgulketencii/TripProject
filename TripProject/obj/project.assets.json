@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AutoMapper/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[12.0.1]",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "BouncyCastle.Cryptography/2.1.1": {
         "type": "package",
         "compile": {
@@ -39,7 +64,7 @@
           "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {}
         }
       },
-      "EPPlus/6.2.3": {
+      "EPPlus/6.2.4": {
         "type": "package",
         "dependencies": {
           "EPPlus.Interfaces": "6.1.1",
@@ -88,7 +113,7 @@
           "lib/netstandard2.0/ExcelNumberFormat.dll": {}
         }
       },
-      "FluentValidation/11.5.1": {
+      "FluentValidation/11.5.2": {
         "type": "package",
         "compile": {
           "lib/net5.0/FluentValidation.dll": {}
@@ -152,7 +177,7 @@
           "lib/netstandard1.6/Irony.dll": {}
         }
       },
-      "iTextSharp.LGPLv2.Core/3.3.5": {
+      "iTextSharp.LGPLv2.Core/3.4.2": {
         "type": "package",
         "dependencies": {
           "BouncyCastle.Cryptography": "2.0.0",
@@ -1019,13 +1044,16 @@
           "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "Microsoft.Extensions.DependencyModel/5.0.0": {
@@ -1147,26 +1175,32 @@
           "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {}
         }
       },
-      "Microsoft.Extensions.Options/5.0.0": {
+      "Microsoft.Extensions.Options/6.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
-          "Microsoft.Extensions.Primitives": "5.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         },
         "runtime": {
-          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/5.0.0": {
+      "Microsoft.Extensions.Primitives/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "compile": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "Microsoft.Extensions.WebEncoders/2.2.0": {
@@ -3558,6 +3592,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "DTOLayer": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "EPPlus": "6.2.3",
           "EntitiyLayer": "1.0.0",
@@ -3590,6 +3625,16 @@
           "bin/placeholder/DataAccessLayer.dll": {}
         }
       },
+      "DTOLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DTOLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTOLayer.dll": {}
+        }
+      },
       "EntitiyLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -3609,6 +3654,35 @@
     }
   },
   "libraries": {
+    "AutoMapper/12.0.1": {
+      "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "type": "package",
+      "path": "automapper/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+      "sha512": "+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
     "BouncyCastle.Cryptography/2.1.1": {
       "sha512": "NNQaa4eyf5YjSdLKUWGPzq5HXZQc3yGybfIOkR6UY1C/rRFWdo0UhSzBqqnxwGnq3ie4vkN0JlzhhANjfTIJIQ==",
       "type": "package",
@@ -3667,15 +3741,15 @@
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
       ]
     },
-    "EPPlus/6.2.3": {
-      "sha512": "Lyp6zJHNU1QaDIcSheBCazqlqgs+8ByHGYwU9vEsbY7EQfPhd0nnejcHrM5DqaWdoXvKuyPoWBYNSz3iIyUNUQ==",
+    "EPPlus/6.2.4": {
+      "sha512": "q61q8TeVqBRz+wGP0u/k0MJlpLM5YmkXhwUQxeSfaNBJD+RXvMhfioSq5b0HqTjc01h19Tt6vzHj0x5PfndOZQ==",
       "type": "package",
-      "path": "epplus/6.2.3",
+      "path": "epplus/6.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EPPlusLogo.png",
-        "epplus.6.2.3.nupkg.sha512",
+        "epplus.6.2.4.nupkg.sha512",
         "epplus.nuspec",
         "lib/net35/EPPlus.dll",
         "lib/net35/EPPlus.xml",
@@ -3752,16 +3826,16 @@
         "lib/netstandard2.0/ExcelNumberFormat.xml"
       ]
     },
-    "FluentValidation/11.5.1": {
-      "sha512": "0h1Q5lNOLLyYTWMJmyNoMqhY4CBRvvUWvJP1R4F2CnmmzuWwvB0A8aVmw5+lOuwYnwUwCRrdeMLbc81F38ahNQ==",
+    "FluentValidation/11.5.2": {
+      "sha512": "kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
       "type": "package",
-      "path": "fluentvalidation/11.5.1",
+      "path": "fluentvalidation/11.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.11.5.1.nupkg.sha512",
+        "fluentvalidation.11.5.2.nupkg.sha512",
         "fluentvalidation.nuspec",
         "lib/net5.0/FluentValidation.dll",
         "lib/net5.0/FluentValidation.xml",
@@ -3841,14 +3915,14 @@
         "lib/netstandard1.6/Irony.dll"
       ]
     },
-    "iTextSharp.LGPLv2.Core/3.3.5": {
-      "sha512": "H3flN6Hf6WnxABeCLXIva+DOMGavTYTuFz+iuF2SNfC5nCmI0zQoECCgm7kXeUFX1J+P5paDXL9BhwaTiMaJUw==",
+    "iTextSharp.LGPLv2.Core/3.4.2": {
+      "sha512": "WiHHO29ItZOegYERW8IjjAu1LOJ6BcXLgGBsIbFIe9Za/Mn/pTb2e1a30A9fVodTOuM+sij3wdeuFjhhkkugVA==",
       "type": "package",
-      "path": "itextsharp.lgplv2.core/3.3.5",
+      "path": "itextsharp.lgplv2.core/3.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "itextsharp.lgplv2.core.3.3.5.nupkg.sha512",
+        "itextsharp.lgplv2.core.3.4.2.nupkg.sha512",
         "itextsharp.lgplv2.core.nuspec",
         "lib/net462/iTextSharp.LGPLv2.Core.dll",
         "lib/net462/iTextSharp.LGPLv2.Core.xml",
@@ -4944,24 +5018,29 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
-      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.DependencyModel/5.0.0": {
@@ -5142,10 +5221,10 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.Extensions.Options/5.0.0": {
-      "sha512": "CBvR92TCJ5uBIdd9/HzDSrxYak+0W/3+yxrNg8Qm6Bmrkh5L+nu6m3WeazQehcZ5q1/6dDA7J5YdQjim0165zg==",
+    "Microsoft.Extensions.Options/6.0.0": {
+      "sha512": "dzXN0+V1AyjOe2xcJ86Qbo233KHuLEY0njf/P2Kw8SfJU+d45HNS2ctJdnEnrWbM9Ye2eFgaC5Mj9otRMU6IsQ==",
       "type": "package",
-      "path": "microsoft.extensions.options/5.0.0",
+      "path": "microsoft.extensions.options/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5154,36 +5233,38 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/Microsoft.Extensions.Options.dll",
         "lib/net461/Microsoft.Extensions.Options.xml",
-        "lib/net5.0/Microsoft.Extensions.Options.dll",
-        "lib/net5.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.5.0.0.nupkg.sha512",
+        "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.6.0.0.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/5.0.0": {
-      "sha512": "cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
+    "Microsoft.Extensions.Primitives/6.0.0": {
+      "sha512": "9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/5.0.0",
+      "path": "microsoft.extensions.primitives/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/Microsoft.Extensions.Primitives.dll",
         "lib/net461/Microsoft.Extensions.Primitives.xml",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.6.0.0.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.WebEncoders/2.2.0": {
@@ -11154,6 +11235,11 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
+    "DTOLayer/1.0.0": {
+      "type": "project",
+      "path": "../DTOLayer/DTOLayer.csproj",
+      "msbuildProject": "../DTOLayer/DTOLayer.csproj"
+    },
     "EntitiyLayer/1.0.0": {
       "type": "project",
       "path": "../EntitiyLayer/EntitiyLayer.csproj",
@@ -11162,12 +11248,13 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "BusinessLayer >= 1.0.0",
       "ClosedXML >= 0.101.0",
       "DataAccessLayer >= 1.0.0",
-      "EPPlus >= 6.2.3",
+      "EPPlus >= 6.2.4",
       "EntitiyLayer >= 1.0.0",
-      "FluentValidation >= 11.5.1",
+      "FluentValidation >= 11.5.2",
       "FluentValidation.AspNetCore >= 11.3.0",
       "MailKit >= 4.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
@@ -11179,29 +11266,24 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.17",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "Serilog.Extensions.Logging.File >= 3.0.0",
-      "iTextSharp.LGPLv2.Core >= 3.3.5"
+      "iTextSharp.LGPLv2.Core >= 3.4.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\keten\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\TripProject\\TripProject.csproj",
+      "projectUniqueName": "C:\\Users\\keten\\source\\repos\\TripProject\\TripProject\\TripProject.csproj",
       "projectName": "TripProject",
-      "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\TripProject\\TripProject.csproj",
-      "packagesPath": "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\TripProject\\obj\\",
+      "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\TripProject\\TripProject.csproj",
+      "packagesPath": "C:\\Users\\keten\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\keten\\source\\repos\\TripProject\\TripProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Sevgül KETENCİ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\keten\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -11214,14 +11296,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\keten\\source\\repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
-              "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj"
+            "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj": {
+              "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj"
             }
           }
         }
@@ -11236,17 +11318,21 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
           "ClosedXML": {
             "target": "Package",
             "version": "[0.101.0, )"
           },
           "EPPlus": {
             "target": "Package",
-            "version": "[6.2.3, )"
+            "version": "[6.2.4, )"
           },
           "FluentValidation": {
             "target": "Package",
-            "version": "[11.5.1, )"
+            "version": "[11.5.2, )"
           },
           "FluentValidation.AspNetCore": {
             "target": "Package",
@@ -11298,7 +11384,7 @@
           },
           "iTextSharp.LGPLv2.Core": {
             "target": "Package",
-            "version": "[3.3.5, )"
+            "version": "[3.4.2, )"
           }
         },
         "imports": [
@@ -11319,7 +11405,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

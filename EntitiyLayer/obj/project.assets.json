@@ -6614,25 +6614,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\keten\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
+      "projectUniqueName": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
       "projectName": "EntitiyLayer",
-      "projectPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
-      "packagesPath": "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\TripProject\\EntitiyLayer\\obj\\",
+      "projectPath": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\EntitiyLayer.csproj",
+      "packagesPath": "C:\\Users\\keten\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\keten\\source\\repos\\TripProject\\EntitiyLayer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Sevgül KETENCİ\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\keten\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6701,7 +6696,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }
