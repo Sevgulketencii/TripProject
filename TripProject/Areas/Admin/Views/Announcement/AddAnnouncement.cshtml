@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "AddAnnouncement";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model AnnouncementAddDTO
+<h1 style="margin-top:10px">Duyuru Ekleme Sayfası</h1>
+
+<form action="/Admin/Announcement/AddAnnouncement" method="post">
+
+    <label >Başlık Giriniz</label>
+    <input type="text" name="Title" value="" class="form-control" />
+    <span asp-validation-for="Title" class="text-danger"></span><br />
+
+    <label>İçeriği Giriniz</label>
+    <input type="text" name="Content" value="" class="form-control"/>
+    <span asp-validation-for="Content" class="text-danger" ></span><br /><br />
+    
+    <button action="submit" class="btn btn-success">Ekle</button>
+</form>
+

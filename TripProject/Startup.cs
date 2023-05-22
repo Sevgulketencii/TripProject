@@ -47,9 +47,11 @@ namespace TripProject
 
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+
             services.ContainerDependencies();
             services.AddAutoMapper(typeof(Startup));
-            services.AddTransient<IValidator<AnnouncementAddDTOs>, AnnouncementValidator>();
+            services.CustomerValidator();
+
             services.AddControllersWithViews().AddFluentValidation();   
             services.AddMvc(config =>
             {

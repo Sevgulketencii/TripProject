@@ -12,11 +12,14 @@ namespace TripProject.Mapping.AutoMapperProfile
     {
         public MapProfile()
         {
-            CreateMap<AnnouncementAddDTOs, Announcement>();
-            CreateMap<Announcement, AnnouncementAddDTOs>();
+            CreateMap<AnnouncementAddDTO, Announcement>();
+            CreateMap<Announcement, AnnouncementAddDTO>();
 
-            CreateMap<AnnouncementListDTOs, Announcement>();
-            CreateMap<Announcement, AnnouncementListDTOs>();
+            CreateMap<AnnouncementListDTO, Announcement>();
+            CreateMap<Announcement, AnnouncementListDTO>();
+
+            CreateMap<AnnouncementUpdateDTO, Announcement>();
+            CreateMap<Announcement, AnnouncementUpdateDTO>();
         }
     }
 }
