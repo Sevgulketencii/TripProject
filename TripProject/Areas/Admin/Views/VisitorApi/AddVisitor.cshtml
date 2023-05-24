@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "AddVisitor";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 style="margin-top:15px">Ziyaretçi Ekleme</h1>
+
+<form action="/Admin/VisitorApi/AddVisitor" method="post">
+
+    <input type="text" name="Name" placeholder="Ad" class="form-control" /><br />
+    <input type="text" name="Surname" placeholder="Soyad" class="form-control" /><br />
+    <input type="text" name="City" placeholder="Şehir" class="form-control" /><br />
+    <input type="text" name="Country" placeholder="Ülke" class="form-control" /><br />
+    <input type="text" name="Email" placeholder="E-mail adresi" class="form-control" /><br />
+    <button action="submit" class="btn btn-success">Ekle</button>
+</form>

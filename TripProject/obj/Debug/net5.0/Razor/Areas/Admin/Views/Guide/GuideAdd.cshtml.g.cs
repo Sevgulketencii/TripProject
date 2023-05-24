@@ -40,8 +40,15 @@ using DTOLayer.DTOs.AnnouncementDTOs;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\keten\source\repos\TripProject\TripProject\Areas\Admin\Views\_ViewImports.cshtml"
+using TripProject.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1321d9a18c26603ecf2f3e48cc863024e8a12b1d", @"/Areas/Admin/Views/Guide/GuideAdd.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cc002863238eeec658f036c967cc2ee066f73cbb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f9db49d31546b87d27a351e9d32dc17f3ee9278", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Guide_GuideAdd : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Guide>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -86,9 +93,9 @@ using DTOLayer.DTOs.AnnouncementDTOs;
 #line hidden
 #nullable disable
             WriteLiteral("<br />\r\n<h1>Rehber Ekle</h1>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d5769", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d5978", async() => {
                 WriteLiteral("\r\n\r\n    <input type=\"text\" name=\"GuideName\" placeholder=\"Adı Soyadı\" class=\"form-control\" />\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d6135", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d6344", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper>();
@@ -110,7 +117,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpr
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("<br />\r\n    <textarea name=\"GuideDescription\" class=\"form-control\" placeholder=\"Açıklama\" rows=\"4\" cols=\"4\"></textarea>\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d7933", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d8142", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper>();
@@ -132,7 +139,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = ModelExpr
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("<br />\r\n    <input type=\"text\" name=\"GuideImage\" placeholder=\"Görsel\" class=\"form-control\" />\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d9710", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1321d9a18c26603ecf2f3e48cc863024e8a12b1d9919", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper>();

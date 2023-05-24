@@ -40,8 +40,15 @@ using DTOLayer.DTOs.AnnouncementDTOs;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\keten\source\repos\TripProject\TripProject\Areas\Admin\Views\_ViewImports.cshtml"
+using TripProject.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b582cbb2476d2eb7e6c6675d96b2b8e761caa234", @"/Areas/Admin/Views/Destination/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cc002863238eeec658f036c967cc2ee066f73cbb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f9db49d31546b87d27a351e9d32dc17f3ee9278", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Destination_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Destination>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "Admin", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -204,7 +211,7 @@ WriteAttributeValue("", 1639, item.DestinationID, 1639, 19, false);
 #line hidden
 #nullable disable
             WriteLiteral("\r\n\r\n            </tbody>\r\n        </table>\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b582cbb2476d2eb7e6c6675d96b2b8e761caa23410038", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b582cbb2476d2eb7e6c6675d96b2b8e761caa23410247", async() => {
                 WriteLiteral("Ekle");
             }
             );

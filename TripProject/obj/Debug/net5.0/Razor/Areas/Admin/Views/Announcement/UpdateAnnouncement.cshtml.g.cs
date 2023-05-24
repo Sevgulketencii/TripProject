@@ -40,8 +40,15 @@ using DTOLayer.DTOs.AnnouncementDTOs;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\keten\source\repos\TripProject\TripProject\Areas\Admin\Views\_ViewImports.cshtml"
+using TripProject.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f6ca009b14a26994982ad4310fad42327d1eb5fe", @"/Areas/Admin/Views/Announcement/UpdateAnnouncement.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cc002863238eeec658f036c967cc2ee066f73cbb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f9db49d31546b87d27a351e9d32dc17f3ee9278", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Announcement_UpdateAnnouncement : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<AnnouncementUpdateDTO>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -84,7 +91,7 @@ using DTOLayer.DTOs.AnnouncementDTOs;
 #line hidden
 #nullable disable
             WriteLiteral("<h1 style=\"margin-top:10px\">Duyuru Güncelleme Sayfası</h1>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6ca009b14a26994982ad4310fad42327d1eb5fe5401", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6ca009b14a26994982ad4310fad42327d1eb5fe5610", async() => {
                 WriteLiteral("\r\n\r\n    <input type=\"hidden\" name=\"AnnouncementID\"");
                 BeginWriteAttribute("value", " value=\"", 318, "\"", 347, 1);
 #nullable restore
@@ -106,7 +113,7 @@ WriteAttributeValue("", 431, Model.Title, 431, 12, false);
 #nullable disable
                 EndWriteAttribute();
                 WriteLiteral(" class=\"form-control\" />\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6ca009b14a26994982ad4310fad42327d1eb5fe6643", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6ca009b14a26994982ad4310fad42327d1eb5fe6852", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper>();
@@ -138,7 +145,7 @@ WriteAttributeValue("", 625, Model.Content, 625, 14, false);
 #nullable disable
                 EndWriteAttribute();
                 WriteLiteral(" class=\"form-control\" />\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6ca009b14a26994982ad4310fad42327d1eb5fe8846", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("span", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6ca009b14a26994982ad4310fad42327d1eb5fe9055", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper>();

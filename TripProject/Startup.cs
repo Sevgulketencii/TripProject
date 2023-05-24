@@ -45,6 +45,7 @@ namespace TripProject
                 x.AddDebug();
             });
 
+            services.AddHttpClient();    
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
 

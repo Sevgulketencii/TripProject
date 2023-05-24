@@ -1078,3 +1078,6 @@ C:\Users\keten\source\repos\TripProject\TripProject\bin\Debug\net5.0\Microsoft.E
 C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Announcement\Index.cshtml.g.cs
 C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Announcement\AddAnnouncement.cshtml.g.cs
 C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\Announcement\UpdateAnnouncement.cshtml.g.cs
+C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\VisitorApi\GetList.cshtml.g.cs
+C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\VisitorApi\AddVisitor.cshtml.g.cs
+C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\VisitorApi\UpdateVisitor.cshtml.g.cs
