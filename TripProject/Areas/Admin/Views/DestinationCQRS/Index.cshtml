@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model List<GetAllDestinationQueryResult>
+
+<h1 style="margin-top:15px">CQRS TURLAR TABLOSU</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Şehir Adı</th>
+            <th>Gün - Gece</th>
+            <th>Kapasite</th>
+            <th>Ücret</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.destinationName</td>
+                <td>@item.destinationDayNight</td>
+                <td>@item.destinationCapacity</td>
+                <td>@item.destinationPrice</td>
+                <td><a href="#" class="btn btn-warning">Güncelle</a></td>
+                <td><a href="#"class="btn btn-danger">Sil</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="#" class="btn btn-success">Ekle</a>

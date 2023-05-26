@@ -22,6 +22,7 @@ namespace TripProject.Areas.Admin.Controllers
 
         public async Task<IActionResult> GetList()
         {
+
             var client = _httpClientFactory.CreateClient();
             var response = await client.GetAsync("http://localhost:50079/api/Visitor");
             if (response.IsSuccessStatusCode)
@@ -43,6 +44,7 @@ namespace TripProject.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> AddVisitor(VisitorModel p)
         {
+
             var client = _httpClientFactory.CreateClient();
             var json = JsonConvert.SerializeObject(p);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -59,8 +61,9 @@ namespace TripProject.Areas.Admin.Controllers
 
         public async Task<IActionResult> DeleteVisitor(int id)
         {
+
             var client = _httpClientFactory.CreateClient();
-            var response =await client.DeleteAsync("http://localhost:50079/api/Visitor/" + id);
+            var response = await client.DeleteAsync("http://localhost:50079/api/Visitor/" + id);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("GetList");
@@ -69,10 +72,11 @@ namespace TripProject.Areas.Admin.Controllers
             return View();
 
         }
-        
+
         [HttpGet]
         public async Task<IActionResult> UpdateVisitor(int id)
         {
+
             var client = _httpClientFactory.CreateClient();
             var response = await client.GetAsync("http://localhost:50079/api/Visitor/" + id);
             if (response.IsSuccessStatusCode)
@@ -88,6 +92,7 @@ namespace TripProject.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateVisitor(VisitorModel p)
         {
+
             var client = _httpClientFactory.CreateClient();
             var json = JsonConvert.SerializeObject(p);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -97,6 +102,7 @@ namespace TripProject.Areas.Admin.Controllers
                 return RedirectToAction("GetList");
             }
             return View();
+            
         }
     }
 }

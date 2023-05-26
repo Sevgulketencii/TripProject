@@ -23,6 +23,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using TripProject.CQRS.Handlers.DestinationHandlers;
 
 namespace TripProject
 {
@@ -45,6 +46,7 @@ namespace TripProject
                 x.AddDebug();
             });
 
+            services.AddScoped<GetAllDestinationQueryHandler>();
             services.AddHttpClient();    
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();

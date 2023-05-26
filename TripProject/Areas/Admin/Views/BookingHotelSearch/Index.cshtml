@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+@model IEnumerable<BookingSearchHotelModel.Result>
+
+
+<h3 class="pb-1 mb-4" style="margin-top:15px">İstanbul Konumundaki Oteller</h3>
+<div class="row mb-5">
+    @foreach (var item in Model)
+    {
+        count++;
+        <div class="col-md-6 col-xl-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">@count - @item.hotel_name</h5>
+                    <p class="card-text">
+                        @item.address
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            Otel Değerlendirmesi@{
+                                if (item.review_score_word == "Very good")
+                                {
+                                    <td>Çok İyi</td>
+                                }
+                                if (item.review_score_word == "Superb")
+                                {
+                                    <td>Süper</td>
+                                }
+                                if (item.review_score_word == "Good")
+                                {
+                                    <td>İyi</td>
+                                }
+                                if (item.review_score_word == "Fabulous")
+                                {
+                                    <td>Harika</td>
+                                }
+
+
+                            }
+                        </small>
+                    </p>
+                </div>
+                <img class="card-img-bottom" src="@item.max_1440_photo_url" alt="Card image cap" />
+            </div>
+        </div>
+    }
+
+</div>

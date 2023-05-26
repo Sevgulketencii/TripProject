@@ -39,6 +39,7 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Member\Data\" />
+    <Folder Include="CQRS\Commands\" />
     <Folder Include="wwwroot\Member\.git\objects\info\" />
     <Folder Include="wwwroot\Member\.git\objects\pack\" />
     <Folder Include="wwwroot\Member\.git\refs\tags\" />
