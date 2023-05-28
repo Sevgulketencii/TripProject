@@ -1085,3 +1085,4 @@ C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas
 C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\BookingExchange\Index.cshtml.g.cs
 C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\BookingHotelSearch\Index.cshtml.g.cs
 C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\DestinationCQRS\Index.cshtml.g.cs
+C:\Users\keten\source\repos\TripProject\TripProject\obj\Debug\net5.0\Razor\Areas\Admin\Views\DestinationCQRS\GetById.cshtml.g.cs

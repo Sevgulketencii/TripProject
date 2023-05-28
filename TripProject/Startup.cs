@@ -45,7 +45,7 @@ namespace TripProject
                 x.SetMinimumLevel(LogLevel.Debug); // ------> Loglamanýn nereden baþlýyacaðý
                 x.AddDebug();
             });
-
+            services.AddScoped<GetDestinationByIdQueryHandler>();
             services.AddScoped<GetAllDestinationQueryHandler>();
             services.AddHttpClient();    
             services.AddDbContext<Context>();

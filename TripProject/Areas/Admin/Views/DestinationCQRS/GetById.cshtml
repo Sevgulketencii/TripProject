@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "GetById";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model GetDestinationByIdQueryResult
+<h1 style="margin-top:15px">GetById CQRS</h1>
+<form action="/" method="post">
+
+    <input type="hidden" name="destinationID" value="@Model.destinationID" class="form-control" />
+
+    <label>Şehir Adı</label><br />
+    <input type="text" name="City" value="@Model.City" class="form-control" /><br />
+
+    <label>Süre</label><br />
+    <input type="text" name="DayNight" value="@Model.DayNight" class="form-control" /><br />
+
+    <label>Fiyat</label><br />
+    <input type="text" name="Price" value="@Model.Price" class="form-control" /><br />
+
+    <button action="submit" class="btn btn-success">Güncelle</button>
+</form>
